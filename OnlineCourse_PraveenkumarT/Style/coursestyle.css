@@ -1,0 +1,43 @@
+body{
+   background-color: darkgrey;
+   text-align: center;
+}
+
+#homepage button {
+
+    display: block;
+
+    color:darkorchid;
+    position: relative;
+    left: 40%;
+    top: 40%;
+   
+    margin: 30px;
+    width: 10%;
+    height: 10%;
+    
+}
+#homepage button:hover{
+    background-color: darkorchid;
+    color: white;
+    
+}
+
+#getuserinfo{
+    display: none;
+}
+#loginpage{
+    display: none;
+}
+#availablepage{
+    display: none;
+}
+#course{
+    display: none;
+}
+#Ecourse{
+    display: none;
+}
+#back{
+    display: none;
+}

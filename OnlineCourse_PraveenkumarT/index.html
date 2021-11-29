@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Online Coures</title>
+        <script  src="Script/coursescript.js"></script>
+        <link rel="stylesheet" href="Style/coursestyle.css">
+    </head>
+    <body>
+        <h1>Apply Online Course</h1>
+        <div id="homepage">
+           
+
+            <button onclick="UserRegistration()">User Register</button>
+            <button onclick="UserLogin()">Login</button>
+        </div>
+        <!--user register-->
+        <div id="getuserinfo">
+            UserName :<input type="text" id="name">
+            Age :<input type="number" id="age">
+            Phone No:<input type="text" id="phono"><br>
+            <button onclick="Add()">ADD</button>
+            <label id="ans"></label>
+
+        </div>
+        <!--Login page-->
+        <div id="loginpage">
+            User ID:<input type="text" id="userid">
+            <button onclick="CheckUserId()">Login</button>
+
+        </div>
+        <!--Available button and enrolled button-->
+        <div id="availablepage">
+            <button onclick="Courses()">Available Course</button>
+            <button onclick="EnrolledCourses()">Enrolled Course</button>
+            <!-- <button onclick="Back2()" >Back</button> -->
+        </div>
+        
+        <!--Course page-->
+        <div id="course">
+            Choose Course:<select id="lan">
+                <option value="">select</option>
+                <option value="C#">C#</option>
+                <option value="HTML">HTML</option>
+                <option value="javascript">javascript</option>
+                <option value="TypeScript">TypeScript</option>
+            </select><br>
+            Days for Completion:<input type="text" id="days"><br>
+            <button onclick="Enroll()">Enroll</button>
+            <button id="b1" onclick="Back1()" >Back</button>
+
+        </div>
+        <!--Enrolled course-->
+        <div id="Ecourse">
+            <label id="courseDetails"></label>
+            Total number of days: <label id="days"></label>
+            <button id="b" onclick="Back()">Back</button>
+        </div>       
+    </body>
+</html>
